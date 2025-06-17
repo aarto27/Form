@@ -1,5 +1,4 @@
 const userDataArray = [];
-let sortedOrder = [];
 let isSorted = false;
 
 document.getElementById('btn').addEventListener('click', function (e) {
@@ -13,8 +12,6 @@ document.getElementById('btn').addEventListener('click', function (e) {
     userDataArray.push(newUser);
     console.log("userDataArray===>",userDataArray);
 
-    sortedOrder = [...userDataArray];
-    console.log("SortedOrder===>", sortedOrder);
 
     let newRow = document.createElement('tr')
 
