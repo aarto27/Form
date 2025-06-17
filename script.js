@@ -1,9 +1,20 @@
+const userDataArray = [];
+let sortedOrder = [];
+let isSorted = false;
+
 document.getElementById('btn').addEventListener('click', function (e) {
     e.preventDefault();
     let name = document.getElementById('name').value;
     let num = document.getElementById('number').value;
     let age = document.getElementById('age').value;
     let city = document.getElementById('city').value;
+
+    const newUser = { name, num, age, city };
+    userDataArray.push(newUser);
+    console.log("userDataArray===>",userDataArray);
+
+    sortedOrder = [...userDataArray];
+    console.log("SortedOrder===>", sortedOrder);
 
     let newRow = document.createElement('tr')
 
